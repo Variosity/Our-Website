@@ -1,55 +1,99 @@
 body {
-	background-color: linen;
-}
+	background-color: #fffefa;
 
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: AliceBlue;
+}
+a:visited {
+	color: white;
+}
+/* */
 h1 {
 	color: black;
 	text-align:  center;
+	font-family: 'Comfortaa';
 
 }
 
 p {
 color: black;
-font-family: sans-serif;
+font-family: 'Comfortaa';
 }
 
 .our {
-  width: 1200px;
+  width:400px;
+	height: 1200px;
 	border: 6px solid;
-  border-color: rgba(47, 79, 79);
-  background: white;
+  border-color:  #f8f3ed;
+  background:   #f8f3ed;
 	padding: 50px;
 	margin: 20px;
+	font-family: 'Comfortaa' , cursive;
 }
 
 footer{
 	color: black;
 	text-align: center;
-	font-family: "lucida handwriting", cursive;
+	font-family: 'Comfortaa';
 	font-size: 20px;
 }
 
 .container {
-	background: rgb(47, 79, 79);
+	background: #7c7874;
+	padding: 7px;
+	position: sticky;
+	top: 0;
+	color: AliceBlue;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
-html, body {
-	height: 100%;
-	margin: 0;
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Comfortaa';
 }
+
+.price{
+	color: lightcoral;
+	font-size: 22px;
+}
+
+.card button{
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color:  #b4afaa;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+
+}
+
+.card button:hover{
+	opacity: 0.7;
+}
+
 .container {
-	height: 40%;
+	height: 60%;
 	display: flex;
 	align-items: right;
 	justify-content: right;
 	flex-direction: right;
 	color: #fff;
 }
-.lead { font-family: 'Quicksand'; }
 .header-bar {
 	position: relative;
-	width: 50%;
+	width: 40%;
 	min-width: 300px;
 	height: 50px;
 	border: 10px solid transparent;
@@ -75,7 +119,7 @@ html, body {
 	left: 10px;
 	transform: translateY(-50%);
 	color: #fffc;
-	font-family: 'Parisienne', cursive;
+	font-family: 'Comfortaa', cursive;
 	cursor: default;
 	user-select: none;
 }
@@ -93,7 +137,7 @@ html, body {
 	display: inline-flex;
 	padding: 14px;
 	margin-left: 2px;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Comfortaa', sans-serif;
 	color: #fff;
 	cursor: pointer;
 	transition: 0.3s linear all;
@@ -115,13 +159,11 @@ html, body {
 	border-radius: 25px;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
-.aeu-signature { font-family: "Quicksand"; }
+.aeu-signature { font-family: "Comfortaa"; }
 .aeu-signature > img { height: 30px; }
 
 
-
-
-
+/*Flex stuff */
 .flex {
     display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: flex;
