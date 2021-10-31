@@ -2,6 +2,7 @@ body {
 	background-color: #fffefa;
 
 }
+
 /* Link Styles */
 
 a {
@@ -116,8 +117,8 @@ footer{
 .header-bar > .logo {
 	position: absolute;
 	top: calc(50% - 20px);
-	left: 10px;
 	transform: translateY(-50%);
+	left: 10px;
 	color: #fffc;
 	font-family: 'Comfortaa', cursive;
 	cursor: default;
@@ -143,10 +144,19 @@ footer{
 	transition: 0.3s linear all;
 	user-select: none;
 }
-.slider-menu > li:hover {
-	color: #faa;
-	box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+
+
+/*Flex stuff */
+.flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: auto;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
 }
+
 .aeu-signature {
 	position: fixed;
 	top: 5px;
@@ -162,14 +172,88 @@ footer{
 .aeu-signature { font-family: "Comfortaa"; }
 .aeu-signature > img { height: 30px; }
 
+/*animations for menu*/
+.slider-menu li {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+}
+.slider-menu li span {
+	transition: all 0.3s;
+}
+.slider-menu li ::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.slider-menu li :hover span {
+	letter-spacing: 2px;
+}
+.slider-menu li :hover::before {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.slider-menu li ::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255,255,255,0.1);
+}
+.slider-menu li :hover::after {
+	opacity: 0;
+	transform: scale(0.1, 1);
+}
 
-/*Flex stuff */
-.flex {
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: flex;
-    max-width: auto;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0 auto;
-    text-align: center;
+/*login box*/
+
+.dropdowncontent{
+	display: none;
+	border: solid;
+	padding: 10px;
+	background-color:  #b4afaa;
+	cursor: pointer;
+	width: 90%;
+	font-size:40px;
+	height: 150px;
+}
+
+
+.dropdown:hover .dropdowncontent {
+	background:  #b4afaa;
+	display: block;
+}
+
+.dropbtn {
+	padding: 5px;
+	margin-left: 0px;
+	font-family: 'Comfortaa', sans-serif;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+	border: none;
+	outline: 0;
+	text-align: center;
+	cursor: pointer;
+	width: 40%;
+	font-size: 18px;
+	position: sticky;
+background: transparent;
 }
