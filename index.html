@@ -1,62 +1,65 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="https://e7.pngegg.com/pngimages/710/115/png-clipart-computer-icons-favicon-science-iconfinder-free-science-icon-text-logo-thumbnail.png">
-  <script src="script.js"></script>
-  <meta name="viewport" content="width=device-width", inital-scale=1.0"/>
-  <link href=reponsive_style.css" type="text/css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional Social Media Management and Virtual Assistant Services">
+    <title>Variosity | Social Media Management & Virtual Assistance</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://e7.pngegg.com/pngimages/710/115/png-clipart-computer-icons-favicon-science-iconfinder-free-science-icon-text-logo-thumbnail.png">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-
-  <div class="container">
-  	<nav class="header-bar">
-  		<ul class="slider-menu">
-  			<li><a href="index.html">Home</a></li>
-  			<li><a href="learnmo.html">Learn More</a></li>
-  			<li><a href="item.html">Services</a></li>
-          <div class="dropdown">
-          <button onclick="dropdown()" class="dropbtn">Login</button>
-          <div id="MyDropdown" class="dropdowncontent">
-        <input type="text" placeholder="Email">
-        <br/>
-        <input type="password" placeholder: "**********">
-      </div>
+    <div class="container">
+        <nav class="header-bar">
+            <ul class="slider-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learnmo.html">Learn More</a></li>
+                <li><a href="item.html">Services</a></li>
+                <li class="dropdown">
+                    <button onclick="dropdown('loginDropdown')" class="dropbtn">Login</button>
+                    <div id="loginDropdown" class="dropdowncontent">
+                        <input type="text" placeholder="Email" class="input-field">
+                        <br />
+                        <input type="password" placeholder="Password" class="input-field">
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button onclick="dropdown('signupDropdown')" class="dropbtn">Signup</button>
+                    <div id="signupDropdown" class="dropdowncontent">
+                        <input type="text" placeholder="Email" class="input-field">
+                        <br />
+                        <input type="text" placeholder="Create a Username" class="input-field">
+                        <br />
+                        <input type="password" placeholder="Create a Password" class="input-field">
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="dropdown">
-      <button onclick="dropdown()" class="dropbtn">Signup</button>
-      <div id="MyDropdown" class="dropdowncontent">
-        <input type="text" placeholder="Email">
-        <br/>
-        <input type="text" placeholder="Create a Username">
-        <br/>
-        <input type="password" placeholder: "Create a Password">
-      </div>
-    </div>
+    <header>
+        <h1 class="tag">Professional Social Media Management & Virtual Assistance</h1>
+    </header>
 
-
-
-  		</ul>
-  	</nav>
-  </div>
-
-
-  <header>
-    <h1 class="tag"></h1>
-  </header>
-  <main class="flex">
-    <div class="our">
-      <p> Welcome, my name is Miguel. I will be your Social Media Manager & Virtual Assistant.
-      You need someone to grow your audience while you focus on your business, I will provide you with the help you need so you have time & room to scale your business. Having someone manage your socials gives you one less thing to worry about.
-      </p>
-    </div>
-
-
+    <main class="flex">
+        <section class="our">
+            <p> Welcome, my name is Miguel. I will be your Social Media Manager & Virtual Assistant. You need someone to grow your audience while you focus on your business. I will provide you with the help you need so you have time and room to scale your business. Having someone manage your socials gives you one less thing to worry about.</p>
+        </section>
     </main>
-    <footer class="foot">@Copyright 2024</footer>
+
+    <footer class="foot">
+        <p>© 2024 Variosity. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
