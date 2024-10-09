@@ -189,6 +189,7 @@ footer {
     .about p,
     .testimonials blockquote {
         font-size: 1.4rem;
+        align-items: center;
     }
 }
 
