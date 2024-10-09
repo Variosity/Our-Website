@@ -13,3 +13,18 @@ window.onclick = function (event) {
         }
     }
 };
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const headerBar = document.querySelector('.header-bar');
+
+    // Show the header on hover
+    headerBar.parentElement.addEventListener('mouseover', () => {
+        headerBar.classList.add('show');
+    });
+
+    // Hide the header when not hovering
+    headerBar.parentElement.addEventListener('mouseleave', () => {
+        headerBar.classList.remove('show');
+    });
+});
