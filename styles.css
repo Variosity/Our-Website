@@ -54,7 +54,7 @@ h2 {
     font-size: 2.5rem;
     color: #111;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .about p,
@@ -66,13 +66,20 @@ h2 {
     text-align: center;
 }
 
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .service-card {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 300px;
+    margin: 20px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -146,6 +153,43 @@ footer {
     padding: 20px;
     background-color: #111;
     color: white;
+}
+
+/* Desktop specific styles */
+@media (min-width: 769px) {
+    header {
+        background: linear-gradient(to right, #00d1b2, #111);
+    }
+
+    h2 {
+        margin-top: 40px;
+        font-size: 3rem;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+
+    .service-card {
+        margin: 20px;
+        width: calc(33% - 40px); /* Three cards in a row with some margin */
+    }
+
+    .service-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .service-card p {
+        font-size: 1.1rem;
+    }
+
+    .about p,
+    .testimonials blockquote {
+        font-size: 1.4rem;
+    }
 }
 
 /* Responsive styling */
