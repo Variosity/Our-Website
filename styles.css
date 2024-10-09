@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0; /* Ensure there is no extra margin */
 }
 
 .container {
@@ -34,7 +35,7 @@ body {
 .slider-menu {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Aligns menu items evenly across */
     align-items: center;
 }
 
@@ -54,7 +55,7 @@ body {
     color: #00d1b2;
 }
 
-/* Dropdown styling */
+/* Fix Dropdown positioning */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -69,6 +70,7 @@ body {
     font-size: 1rem;
     border-radius: 25px;
     transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add space between dropdowns */
 }
 
 .dropbtn:hover {
