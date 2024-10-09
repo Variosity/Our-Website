@@ -33,7 +33,7 @@ body {
 .slider-menu {
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Aligns menu items to the right */
+    
     align-items: center;
 }
 
