@@ -13,63 +13,32 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://e7.pngegg.com/pngimages/710/115/png-clipart-computer-icons-favicon-science-iconfinder-free-science-icon-text-logo-thumbnail.png">
-
-    <!-- JavaScript -->
-    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="header-bar">
-            <ul class="slider-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="learnmo.html">Learn More</a></li>
-                <li><a href="item.html">Services</a></li>
-                <li class="dropdown">
-                    <button onclick="dropdown('loginDropdown')" class="dropbtn">Login</button>
-                    <div id="loginDropdown" class="dropdowncontent">
-                        <input type="text" placeholder="Email" class="input-field">
-                        <br />
-                        <input type="password" placeholder="Password" class="input-field">
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <button onclick="dropdown('signupDropdown')" class="dropbtn">Signup</button>
-                    <div id="signupDropdown" class="dropdowncontent">
-                        <input type="text" placeholder="Email" class="input-field">
-                        <br />
-                        <input type="text" placeholder="Create a Username" class="input-field">
-                        <br />
-                        <input type="password" placeholder="Create a Password" class="input-field">
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
     <header>
-        <h1 class="tag">Professional Social Media Management & Virtual Assistance</h1>
+        <h1 class="tag">Transform Your Online Presence</h1>
+        <p>Your one-stop solution for professional social media management and virtual assistance.</p>
+        <a href="#contact" class="cta-button">Get Started Today!</a>
     </header>
 
-    <main class="flex">
-        <section class="our"> 
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
             <p>
-                Welcome, my name is Miguel, and I offer top-tier Social Media Management and Virtual Assistant services. My expertise spans across web design, content creation, analytics, account security, and more. I'm here to help you grow your business, reach your target audience, and give you the time to focus on what truly matters.
-            </p>
-            <p>
-                By partnering with me, you'll experience above-and-beyond service aimed at improving your marketing strategy, engagement, and overall business scalability. My clients benefit from increased online visibility, streamlined workflows, and more time to focus on their core operations.
+                Hi, I'm Miguel! I specialize in social media management and virtual assistance, dedicated to helping you grow your business and connect with your audience. My goal is to streamline your online presence while delivering exceptional results.
             </p>
         </section>
 
-        <!-- Services Section -->
         <section class="services">
+            <h2>My Services</h2>
             <div class="service-card">
                 <h3>Basic Web Design</h3>
                 <p>Elegant and responsive websites tailored to your brand’s aesthetic and functionality.</p>
             </div>
             <div class="service-card">
                 <h3>Video Editing</h3>
-                <p>Basic video editing services to help your brand stand out on platforms like YouTube and Instagram.</p>
+                <p>Engaging video editing to help your brand stand out on various social media platforms such as Instagram & YouTube.</p>
             </div>
             <div class="service-card">
                 <h3>Account Security & OPSEC</h3>
@@ -77,12 +46,46 @@
             </div>
             <div class="service-card">
                 <h3>Social Media Management</h3>
-                <p>Personalized content scheduling, management, and engagement to save you time and grow your audience.</p>
+                <p>Personalized content scheduling and management to enhance engagement with your audience.</p>
             </div>
             <div class="service-card">
                 <h3>Copywriting & Content Ideas</h3>
-                <p>Creative, engaging copy and content strategies to attract, engage, and retain your audience.</p>
+                <p>Creative and compelling copy & content strategies that resonate with your target audience to attract, engage & retain attention.</p>
             </div>
             <div class="service-card">
-                <h3>Web Scraping & Data Analytics</h3>
-                <p>Leverage data to refine your strategies with web scraping and personalized insights on your business.</p>
+                <h3>Web Scraping & Analytics</h3>
+                <p>Leverage data-driven insights to inmprove your marketing strategies and business-related decisions.</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What My Clients Say</h2>
+            <blockquote>
+                <p>"Miguel's social media strategies transformed our engagement rates overnight. Highly recommended!"</p>
+                <footer>- Jane D.</footer>
+            </blockquote>
+            <blockquote>
+                <p>"The web design and management services Miguel offered were exceptional. Our site has never looked better!"</p>
+                <footer>- Mark T.</footer>
+            </blockquote>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="How can I help you?" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Variosity. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript (if needed for form submission or animations) -->
+</body>
+
+</html>
